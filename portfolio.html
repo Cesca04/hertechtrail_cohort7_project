@@ -10,325 +10,605 @@
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- Icon Font Stylesheet -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet" />
-        <link
-            href="lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet"
-        />
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+         <!-- Boxicons cdn -->
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+         <!-- AOS Animation -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <!-- Link Swiper's CSS cdn -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+ 
+         <!-- Google Web Fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"/>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+ 
+         <!-- Google Web Fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"/>
+ 
+         <!-- Icon Font Stylesheet -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+ 
+         <!-- Libraries Stylesheet -->
+         <link href="lib/animate/animate.min.css" rel="stylesheet" />
+         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+ 
+         <!-- Customized Bootstrap Stylesheet -->
+         <link href="css/bootstrap.min.css" rel="stylesheet" /> 
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
     </head>
-
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
         <div class="container-xxl bg-white p-0">
-            <!-- Spinner Start -->
-            <div
-                id="spinner"
-                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-            >
+            <section id="spinnner">
+                <!-- Spinner Start --> 
                 <div
-                    class="spinner-grow text-primary"
-                    style="width: 3rem; height: 3rem"
-                    role="status"
+                    id="spinner"
+                    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
                 >
-                    <span class="sr-only">Loading...</span>
+                    <div
+                        class="spinner-grow text-primary"
+                        style="width: 3rem; height: 3rem"
+                        role="status"
+                    >
+                        <span class="sr-only">Loading...</span>
+                    </div>
                 </div>
-            </div>
-            <!-- Spinner End -->
+                <!-- Spinner End -->
+            </section>
 
             <!-- Navbar & Hero Start -->
-            <div class="container-xxl position-relative p-0" id="home">
-                <nav
-                    class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-                >
-                    <a href="" class="navbar-brand p-0">
-                        <h1 class="m-0">FitApp</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                    >
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto py-0">
-                            <a href="index.html" class="nav-item nav-link"
-                                >Home</a
-                            >
-                            <a href="./about.html" class="nav-item nav-link"
-                                >About</a
-                            >
-
-                            <a href="#" class="nav-item nav-link active"
-                                >Portfolio</a
-                            >
+            <section id="nav">
+                <div class="container-xxl position-relative p-0 sec-bg-col" id="home">
+                    <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 raleway">
+                        <div class="container-md px-5">
+                            <a href="" class="navbar-brand p-0"><h1 class="m-0">Cesca</h1></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <div class="navbar-nav mx-auto py-0 gap-5">
+                                    <a href="./index.html" class="nav-item nav-link active">Home</a>
+                                    <a href="./about.html" class="nav-item nav-link ">About</a>
+                                    <a href="./portfolio.html" class="nav-item nav-link">Portfolio</a>
+                                    
+                                </div>
+                                
+                                <form class="pe-5" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                                <a href="./contact.html" class="btn btn-primary-gradient rounded-pill py-2 px- ms-3 d-none d-lg-block">Contact</a>
+                            </div>
                         </div>
-                        <a
-                            href="./contact.html"
-                            class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-                            >Contact</a
-                        >
-                    </div>
-                </nav>
-            </div>
+                    </nav>
+                </div>
+            </section>
             <!-- Navbar & Hero End -->
-
-            <!-- Features Start -->
-            <div class="container-xxl py-5" id="feature">
-                <div class="container py-5 px-lg-5">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">
-                            App Features
-                        </h5>
-                        <h1 class="mb-5">Awesome Features</h1>
-                    </div>
-                    <div class="row g-4">
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.1s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i class="fa fa-eye text-white fs-4"></i>
-                                </div>
-                                <h5 class="mb-3">High Resolution</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
-                            </div>
+ 
+            <!-- portfolio Start -->
+            <section id="portfolio">
+                <div class="container-xxl py-5" id="feature">
+                    <div class="container team-container py-5">
+                        <div class="content">
+                            <h3 class="sec-text-col text-md-center poppins fa-2x pt-4">Awesome designs</h3>
+                            <p class="raleway text-center uni-text-col fs-6">Check out our wonderful designs from our UX/UI Designers team</p>
                         </div>
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.3s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i
-                                        class="fa fa-layer-group text-white fs-4"
-                                    ></i>
+                        <div class="row" data-masonry='{"percentPosition": true}'>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-1 (1).jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-3">Retina Ready</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
                             </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.5s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i class="fa fa-edit text-white fs-4"></i>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-2.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-3">Editable Data</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
                             </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.1s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i
-                                        class="fa fa-shield-alt text-white fs-4"
-                                    ></i>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-3.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-3">Fully Secured</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
                             </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.3s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i class="fa fa-cloud text-white fs-4"></i>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-4.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-3">Cloud Storage</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
                             </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
-                            data-wow-delay="0.5s"
-                        >
-                            <div class="feature-item bg-light rounded p-4">
-                                <div
-                                    class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                    style="width: 60px; height: 60px"
-                                >
-                                    <i
-                                        class="fa fa-mobile-alt text-white fs-4"
-                                    ></i>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-5.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-3">Fully Responsive</h5>
-                                <p class="m-0">
-                                    Erat ipsum justo amet duo et elitr dolor,
-                                    est duo duo eos lorem sed diam stet diam sed
-                                    stet lorem.
-                                </p>
                             </div>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-6.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-7.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-8.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>  
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-eff border-0">
+                                <img src="./img/portfolio-9.jpg" alt="" class="w-100 h-100">
+                                <div class="text text-white">
+                                    <p><a href="" class="text-white fs-3">APP</a></p>
+                                    <p><a href="" class="text-white">App 1</a></p>
+                                    <div class="d-flex gx-5">
+                                        <div class="bi bi-plus fa-2x"></div>
+                                        <div class="bi bi-link fa-2x"></div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>  
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Features End -->
-
-            <!-- Footer Start -->
-            <div
-                class="container-fluid bg-primary text-light footer wow fadeIn"
-                data-wow-delay="0.1s"
-            >
-                <div class="container py-5 px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-md-12 col-lg-12">
-                            <h4 class="text-white mb-4">Address</h4>
-                            <div class="d-flex gap-4">
-                                <p>
-                                    <i class="fa fa-map-marker-alt me-3"></i>
-                                    Lagos, Nigeria
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone-alt me-3"></i>+234
-                                    8169129560
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope me-3"></i
-                                    >edoziemagdalene@gmail.com
-                                </p>
-                            </div>
-
-                            <div class="d-flex pt-2 gap-3">
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-linkedin-in"></i
-                                ></a>
+                    <div class="teams team-container">
+                        <div class="team-heading text-center pt-5">
+                            <h1 class="sec-text-col poppins">TEAM</h1>
+                            <p class="uni-text-col raleway fs-5">Meet our magic team members</p>
+                        </div>
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                                    <div class="team-member card  border-0">
+                                        <div class="img-box img-parent position-relative">
+                                            <img src="./img/team-3.jpg" class="card-img-top" alt="...">
+                                            <div class="social-icons d-flex justify-content-center gap-5 p-2">
+                                                <a href=""><i class="bi bi-twitter text-white"></i></a>
+                                                <a href="https://instagram.com/thriftbycesca?igshid=OGY3MTU3OGY1Mw=="><i class="bi bi-instagram text-white"></i></a>
+                                                <a href="https://www.linkedin.com/in/francescaezih-chiekwugo-aca-a69063221"><i class="bi bi-linkedin text-white"></i></a>
+                                                <a href=""><i class="bi bi-facebook text-white"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title fw-bold sec-text-col">Williams Hills</h5>
+                                            <p class="card-text raleway uni-text-col">Chief Executive Office</p>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                                    <div class="team-member card  border-0">
+                                        <div class="img-box img-parent position-relative">
+                                            <img src="./img/team-1.jpg" class="card-img-top" alt="...">
+                                            <div class="social-icons d-flex justify-content-center gap-5 p-2">
+                                                <a href=""><i class="bi bi-twitter text-white"></i></a>
+                                                <a href="https://instagram.com/thriftbycesca?igshid=OGY3MTU3OGY1Mw=="><i class="bi bi-instagram text-white"></i></a>
+                                                <a href="https://www.linkedin.com/in/francescaezih-chiekwugo-aca-a69063221"><i class="bi bi-linkedin text-white"></i></a>
+                                                <a href=""><i class="bi bi-facebook text-white"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title fw-bold sec-text-col">Williams Hills</h5>
+                                            <p class="card-text raleway uni-text-col">Chief Executive Office</p>
+                                        </div>
+                                    </div>
+                                    
+                                      
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                                    <div class="team-member card  border-0">
+                                        <div class="img-box img-parent position-relative">
+                                            <img src="./img/team-2.jpg" class="card-img-top" alt="...">
+                                            <div class="social-icons d-flex justify-content-center gap-5 p-2">
+                                                <a href=""><i class="bi bi-twitter text-white"></i></a>
+                                                <a href="https://instagram.com/thriftbycesca?igshid=OGY3MTU3OGY1Mw=="><i class="bi bi-instagram text-white"></i></a>
+                                                <a href="https://www.linkedin.com/in/francescaezih-chiekwugo-aca-a69063221"><i class="bi bi-linkedin text-white"></i></a>
+                                                <a href=""><i class="bi bi-facebook text-white"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title fw-bold sec-text-col">Williams Hills</h5>
+                                            <p class="card-text raleway uni-text-col">Chief Executive Office</p>
+                                        </div>
+                                    </div>
+                                    
+                                      
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                                    <div class="team-member card  border-0">
+                                        <div class="img-box img-parent position-relative">
+                                            <img src="./img/team-3.jpg" class="card-img-top" alt="...">
+                                            <div class="social-icons d-flex justify-content-center gap-5 p-2">
+                                                <a href=""><i class="bi bi-twitter text-white"></i></a>
+                                                <a href="https://instagram.com/thriftbycesca?igshid=OGY3MTU3OGY1Mw=="><i class="bi bi-instagram text-white"></i></a>
+                                                <a href="https://www.linkedin.com/in/francescaezih-chiekwugo-aca-a69063221"><i class="bi bi-linkedin text-white"></i></a>
+                                                <a href=""><i class="bi bi-facebook text-white"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title fw-bold sec-text-col">Williams Hills</h5>
+                                            <p class="card-text raleway uni-text-col">Chief Executive Office</p>
+                                        </div>
+                                    </div>
+                                    
+                                      
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container px-lg-5">
-                    <div class="copyright">
-                        <div class="row">
+                    <!-- <div class="container py-5 px-lg-5">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h5 class="text-primary-gradient fw-medium">
+                                App Features
+                            </h5>
+                            <h1 class="mb-5">Awesome Features</h1>
+                        </div>
+                        <div class="row g-4">
                             <div
-                                class="col-md-6 text-center text-md-start mb-3 mb-md-0"
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.1s"
                             >
-                                &copy;
-                                <a class="border-bottom" href="#"
-                                    >Hertechtrail cohort 7 project.</a
-                                >
-
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By
-                                <a
-                                    class="border-bottom"
-                                    href="https://htmlcodex.com"
-                                    >Maggy.</a
-                                >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i class="fa fa-eye text-white fs-4"></i>
+                                    </div>
+                                    <h5 class="mb-3">High Resolution</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-menu">
-                                    <a href="">Home</a>
+                            <div
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.3s"
+                            >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i
+                                            class="fa fa-layer-group text-white fs-4"
+                                        ></i>
+                                    </div>
+                                    <h5 class="mb-3">Retina Ready</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.5s"
+                            >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i class="fa fa-edit text-white fs-4"></i>
+                                    </div>
+                                    <h5 class="mb-3">Editable Data</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.1s"
+                            >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i
+                                            class="fa fa-shield-alt text-white fs-4"
+                                        ></i>
+                                    </div>
+                                    <h5 class="mb-3">Fully Secured</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.3s"
+                            >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i class="fa fa-cloud text-white fs-4"></i>
+                                    </div>
+                                    <h5 class="mb-3">Cloud Storage</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-6 wow fadeInUp"
+                                data-wow-delay="0.5s"
+                            >
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div
+                                        class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <i
+                                            class="fa fa-mobile-alt text-white fs-4"
+                                        ></i>
+                                    </div>
+                                    <h5 class="mb-3">Fully Responsive</h5>
+                                    <p class="m-0">
+                                        Erat ipsum justo amet duo et elitr dolor,
+                                        est duo duo eos lorem sed diam stet diam sed
+                                        stet lorem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="frequent-questions team-container">
+                        <h4 class="text-center sec-text-col fw-bold">FREQUENTLY ASKED QUESTIONS</h4>
+                        <div class="pb-3 bg-white">
+                            <div class="accordion mt-4" id="accordionExample">
+                                <div class="accordion-item mb-3 border-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      How do I get started in the Tech Industry?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the way to get started. </strong>A career in tech is a career without boundaries. 
+                                      From web development to product design to project management to app development, the range of job roles and opportunities in the tech ecosystem is huge.
+                                      You might think you're not good enough to have a career in tech  but give yourself a chance. You can do it.
+                                      The truth is you, don't have to be a genius to work in technology. And in this article, I'll explain how you can kickstart your own career in tech.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is the main purpose of technology?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>Technology is used to make life easier.</strong> It can be used to accomplish tasks faster or more efficiently. For example, technology can be used to improve communication or make information more accessible.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How is technology affecting society?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>Technology has also made it easier for us to get information. </strong> Technology is an ever-growing part of society. It seems like every day there is a new technological advancement that changes the way we live. Cell phones, the internet, and social media are just a few examples of how technology has changed the way we communicate.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Do you think I can fit into the tech space without prior knowledge of tech and business administration?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>Of course you can fit in just perfect! You don’t need prior knowledge of tech or business administration at all.  </strong> Perhaps reading stories by students who have taken our courses can help in convincing you more. Go a step further and take a great course on business analysis. Taking this course will make you a great fit in any company as a business analyst.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How can someone with a legal background benefit from the tech industry?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>Technology has also made it easier for us to get information. </strong> As someone with a legal background, you already have the soft skills a  business analyst needs. A business analyst must have research, presentation and negotiation skills. You just need to build yourself on the hard skills. 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio End -->
+        
+            <!-- Footer Start -->
+            <section id="footer">
+                <div
+                    class="container-fluid bg-primary text-light footer wow fadeIn"
+                    data-wow-delay="0.1s"
+                >
+                    <div class="container py-5 px-lg-5">
+                        <div class="row g-5">
+                            <div class="col-lg-6">
+                                <div class="">
+                                    <h1 class="text-white pb-5 poppins fw-bold">Get in touch with us for your service</h1>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex pt-2 gap-3">
+                                        <a
+                                            class="btn btn-outline-light btn-social"
+                                            href=""
+                                            ><i class="fab fa-twitter"></i
+                                        ></a>
+                                        <a
+                                            class="btn btn-outline-light btn-social"
+                                            href=""
+                                            ><i class="fab fa-facebook-f"></i
+                                        ></a>
+                                        <a
+                                            class="btn btn-outline-light btn-social"
+                                            href="https://instagram.com/thriftbycesca?igshid=OGY3MTU3OGY1Mw=="
+                                            ><i class="fab fa-instagram"></i
+                                        ></a>
+                                        <a
+                                            class="btn btn-outline-light btn-social"
+                                            href="https://www.linkedin.com/in/francescaezih-chiekwugo-aca-a69063221"
+                                            ><i class="fab fa-linkedin-in"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fs-6">
+                                <div class="d-flex justify-content-start align-items-start my-4 flex-column poppins">
+                                    <span class=" raleway">Help line Number</span>
+                                    <span>08038365660</span>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-start my-4 flex-column poppins">
+                                    <span class="raleway">Address</span>
+                                    <span>Adewuyi Street, Ijeshatedo Surulere Lagos, Nigeria</span>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-start my-4 flex-column poppins">
+                                    <span class="raleway">We are open</span>
+                                    <span>Monday to Friday 9:00 AM to 10:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-lg-5">
+                        <div class="copyright">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 text-center text-md-start mb-3 mb-md-0"
+                                >
+                                    &copy;
+                                    <a class="border-bottom" href="#"
+                                        >Hertechtrail cohort 7 project.</a
+                                    >
+                                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                                    Designed By
+                                    <a
+                                        class="border-bottom"
+                                        href="https://htmlcodex.com"
+                                        >Francesca.</a
+                                    >
+                                </div>
+                                <div class="col-md-6 text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <a href="">Home</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- Footer End -->
-
+            <section id="back-to-top">
+                <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"
+                    ><i class="bi bi-arrow-up text-white"></i
+                ></a>
+            </section>
             <!-- Back to Top -->
-            <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"
-                ><i class="bi bi-arrow-up text-white"></i
-            ></a>
         </div>
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <section id="libraies">
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/counterup/counterup.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+        </section>
     </body>
 </html>
