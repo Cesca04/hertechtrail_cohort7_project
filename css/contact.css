@@ -1,8 +1,13 @@
 nav {
-    background-color: #6d4df2;
+    background-color: white;
+    color: black;
 }
 
 .map{
     height: 200% !important; 
    
+}
+
+body{
+    background-color: white !important;
 }
