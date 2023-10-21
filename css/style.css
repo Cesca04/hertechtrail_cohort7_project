@@ -910,3 +910,9 @@ h6,
 .team-member:hover .social-icons{
     opacity: 1;
 }
+
+
+
+.button-font{
+    font-size: .75em;
+}
