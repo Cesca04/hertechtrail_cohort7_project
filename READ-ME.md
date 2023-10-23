@@ -22,7 +22,10 @@ The external libaries used to build this web page include;
 5. AOS
 6. Favicon
 7. google font
-8.
+
+
+
+All the links can be found on the head tags
 
 
 
